@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive on all devices -->
-    <title>Books Diana Reads</title> <!-- Title of the webpage -->
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Diana Reads</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Container for the entire page content -->
     <div class="container">
-        <!-- Header section of the page -->
         <header>
-            <h1>Books Diana Reads</h1> <!-- Main heading of the page -->
+            <h1>Books Diana Reads</h1>
         </header>
         
-        <!-- Navigation menu -->
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li> <!-- Link to the home page -->
-                <li><a href="page2.html">Bookshelf</a></li> <!-- Link to the bookshelf page -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Bookshelf</a></li>
             </ul>
         </nav>
 
-        <!-- Main content area -->
-        <main>
-            <section class="intro"> <!-- Introduction section -->
-                <h2>Welcome</h2> <!-- Section heading -->
-                <p>Hi, I'm Diana. I live in Luxembourg and I love reading books. Here you will find a collection of books I've read and my current reads. Dive in and explore my literary journey!</p> <!-- Brief introduction -->
-                <h3>Currently Reading</h3> <!-- Subheading for currently reading books -->
-                <ul>
-                    <li>
-                        <strong>Tinker, Tailor, Soldier, Spy</strong> by John le Carré <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/10073506-tinker-tailor-soldier-spy" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </li>
-                    <li>
-                        <strong>Mulheres na Resistência</strong> by Tilar J. Mazzeo <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/158078939-mulheres-na-resist-ncia" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </li>
-                </ul>
-            </section>
-        </main>
+        <div class="main-content">
+            <main>
+                <section class="intro">
+                    <h2>Welcome</h2>
+                    <div class="intro-content">
+                        <img src="images/me-in-iceland.jpg" alt="Diana in Iceland">
+                        <p>Hi, I'm Diana. I live in Luxembourg and I love reading books. Here you will find a collection of books I've read and my current reads. Dive in and explore my literary journey!</p>
+                    </div>
+                    <h3>Currently Reading</h3>
+                    <div class="current-reading">
+                        <div class="book">
+                            <strong>Tinker, Tailor, Soldier, Spy</strong><br>by John le Carré
+                            <br>
+                            <img src="images/cover-tinker_tailor_soldier_spy.jpg" alt="Tinker, Tailor, Soldier, Spy">
+                            <br>
+                            <img src="images/uk.png" alt="British Flag" title="This book is in English from Britain">
+                            <br>
+                            <a href="https://www.goodreads.com/book/show/10073506-tinker-tailor-soldier-spy" target="_blank">Goodreads</a>
+                        </div>
+                        <div class="book">
+                            <strong>Mulheres na Resistência</strong><br>by Tilar J. Mazzeo
+                            <br>
+                            <img src="images/cover-mulheres_na_resistencia.jpg" alt="Mulheres na Resistência">
+                            <br>
+                            <img src="images/pt.png" alt="Portuguese Flag" title="This book is in Portuguese">
+                            <br>
+                            <a href="https://www.goodreads.com/book/show/158078939-mulheres-na-resist-ncia" target="_blank">Goodreads</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
 
-        <!-- Footer section -->
+            <aside class="sidebar">
+                <h2>Places</h2>
+                <div class="scene">
+                    <img src="images/bertrand-lisbon.jpg" alt="Bertrand library">
+                    <p>The iconic Bertrand bookstore in Lisbon, Portugal.</p>
+                </div>
+                <div class="scene">
+                    <img src="images/reading_corner_lux.jpg" alt="My reading corner at home, in Luxembourg">
+                    <p>My cozy reading corner at home in Luxembourg.</p>
+                </div>
+            </aside>
+        </div>
+
         <footer>
-            <p>&copy; 2024 Books Diana Reads</p> <!-- Copyright information -->
+            <p>&copy; 2024 Books Diana Reads</p>
         </footer>
     </div>
 </body>

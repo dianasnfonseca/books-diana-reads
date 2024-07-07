@@ -1,6 +1,4 @@
 /* General Styles */
-
-/* Sets the basic font style, margin, padding, line height, and background color for the body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,94 +7,120 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Container style for centralized layout with controlled width */
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-/* Styling for header and footer sections */
 header, footer {
-    background: #333; /* Dark background color */
-    color: #fff; /* White text color */
-    padding: 1em 0; /* Vertical padding */
-    text-align: center; /* Center-aligned text */
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
 }
 
-/* Removes margin for header and footer text elements */
 header h1, footer p {
     margin: 0;
 }
 
-/* Navigation menu styles */
 nav ul {
     padding: 0;
-    list-style: none; /* Removes default list styling */
-    background: #333; /* Dark background color */
-    text-align: center; /* Center-aligned list items */
+    list-style: none;
+    background: #333;
+    text-align: center;
 }
 
-/* Inline list items for the navigation menu */
 nav ul li {
     display: inline;
 }
 
-/* Styling for navigation links */
 nav ul li a {
-    text-decoration: none; /* Removes underline from links */
-    color: #fff; /* White text color */
-    padding: 5px 20px; /* Padding around the link text */
-    display: inline-block; /* Makes the link behave like an inline-block element */
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    display: inline-block;
 }
 
-/* Hover effect for navigation links */
 nav ul li a:hover {
-    background: #575757; /* Slightly lighter background on hover */
+    background: #575757;
 }
 
-/* Styles for the introductory and bookshelf sections */
-.intro, .bookshelf {
-    padding: 20px;
-    background: #fff; /* White background color */
-    margin: 20px 0; /* Vertical margin */
-}
-
-/* Flexbox layout for book items */
-.book {
+.main-content {
     display: flex;
-    align-items: center; /* Align items vertically centered */
-    margin-bottom: 10px; /* Spacing between book items */
+    gap: 20px;
 }
 
-/* Styling for book cover images */
+main {
+    flex: 3;
+}
+
+aside.sidebar {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.intro, .sidebar {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.intro h2, .sidebar h2 {
+    color: #333;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+}
+
+.intro-content img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.current-reading {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book {
+    width: 45%;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .book img {
-    width: 80px; /* Fixed width */
-    height: 120px; /* Fixed height */
-    margin-right: 20px; /* Spacing between image and text */
+    max-width: 100px;
+    display: block;
+    margin: 10px auto;
 }
 
-/* Styling for section headings */
-h2, h3 {
-    color: #333; /* Dark text color */
+.sidebar .scene {
+    margin-bottom: 20px;
 }
 
-/* Responsive Design */
+.sidebar img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
 
-/* Media query for devices with a max width of 768px */
 @media (max-width: 768px) {
     .container {
-        width: 95%; /* Expands the container width */
+        width: 95%;
     }
 
-    /* Adjusts the book layout for smaller screens */
+    .main-content {
+        flex-direction: column;
+    }
+
     .book {
-        flex-direction: column; /* Stacks items vertically */
-        align-items: flex-start; /* Aligns items to the start */
-    }
-
-    /* Adjusts the margin for book cover images */
-    .book img {
-        margin-bottom: 10px; /* Adds spacing below the image */
+        width: 100%;
     }
 }

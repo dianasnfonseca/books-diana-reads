@@ -1,0 +1,102 @@
+/* General Styles */
+
+/* Sets the basic font style, margin, padding, line height, and background color for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Container style for centralized layout with controlled width */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Styling for header and footer sections */
+header, footer {
+    background: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 1em 0; /* Vertical padding */
+    text-align: center; /* Center-aligned text */
+}
+
+/* Removes margin for header and footer text elements */
+header h1, footer p {
+    margin: 0;
+}
+
+/* Navigation menu styles */
+nav ul {
+    padding: 0;
+    list-style: none; /* Removes default list styling */
+    background: #333; /* Dark background color */
+    text-align: center; /* Center-aligned list items */
+}
+
+/* Inline list items for the navigation menu */
+nav ul li {
+    display: inline;
+}
+
+/* Styling for navigation links */
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #fff; /* White text color */
+    padding: 5px 20px; /* Padding around the link text */
+    display: inline-block; /* Makes the link behave like an inline-block element */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    background: #575757; /* Slightly lighter background on hover */
+}
+
+/* Styles for the introductory and bookshelf sections */
+.intro, .bookshelf {
+    padding: 20px;
+    background: #fff; /* White background color */
+    margin: 20px 0; /* Vertical margin */
+}
+
+/* Flexbox layout for book items */
+.book {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    margin-bottom: 10px; /* Spacing between book items */
+}
+
+/* Styling for book cover images */
+.book img {
+    width: 80px; /* Fixed width */
+    height: 120px; /* Fixed height */
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+/* Styling for section headings */
+h2, h3 {
+    color: #333; /* Dark text color */
+}
+
+/* Responsive Design */
+
+/* Media query for devices with a max width of 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Expands the container width */
+    }
+
+    /* Adjusts the book layout for smaller screens */
+    .book {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: flex-start; /* Aligns items to the start */
+    }
+
+    /* Adjusts the margin for book cover images */
+    .book img {
+        margin-bottom: 10px; /* Adds spacing below the image */
+    }
+}

@@ -46,49 +46,46 @@ nav ul li a:hover {
     background: #575757;
 }
 
-.main-content {
+/* Home Page Specific Styles */
+body.home-page .main-content {
     display: flex;
     gap: 20px;
 }
 
-main {
+body.home-page main {
     flex: 3;
 }
 
-aside.sidebar {
+body.home-page aside.sidebar {
     flex: 1;
     background: #fff;
     padding: 20px;
     margin-top: 20px;
 }
 
-.intro, .sidebar {
+body.home-page .intro, body.home-page .sidebar {
     background: #fff;
     padding: 20px;
     margin: 20px 0;
 }
 
-.intro h2, .sidebar h2 {
-    color: #333;
-}
-
-.intro-content {
+body.home-page .intro-content {
     display: flex;
     align-items: center;
 }
 
-.intro-content img {
-    max-width: 150px;
+body.home-page .intro-content img {
+    max-width: 150px; /* Keep max-width as per homepage requirement */
     margin-right: 20px;
 }
 
-.current-reading {
+body.home-page .current-reading {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.book {
+body.home-page .book {
     width: 45%;
     text-align: center;
     border: 1px solid #ccc;
@@ -96,31 +93,89 @@ aside.sidebar {
     border-radius: 5px;
 }
 
-.book img {
-    max-width: 100px;
+body.home-page .book img {
+    max-width: 100px; /* Ensure book cover images are consistent */
     display: block;
     margin: 10px auto;
 }
 
-.sidebar .scene {
+body.home-page .sidebar .scene {
     margin-bottom: 20px;
 }
 
-.sidebar img {
+body.home-page .sidebar img {
     max-width: 100%;
     margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-    .container {
+    body.home-page .container {
         width: 95%;
     }
 
-    .main-content {
+    body.home-page .main-content {
         flex-direction: column;
     }
 
-    .book {
+    body.home-page .book {
         width: 100%;
     }
+}
+
+/* Bookshelf Page Specific Styles */
+body.bookshelf-page main {
+    padding: 20px;
+    background: #fff;
+    margin: 20px 0;
+}
+
+body.bookshelf-page .bookshelf h2, body.bookshelf-page .bookshelf h3 {
+    color: #333;
+}
+
+body.bookshelf-page .book-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+body.bookshelf-page .english-books, body.bookshelf-page .portuguese-books {
+    flex: 1;
+}
+
+body.bookshelf-page .book {
+    flex-basis: calc(33.33% - 20px); /* Adjust width to fit three books per row with gap */
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+body.bookshelf-page .book img {
+    max-width: 100px; /* Ensure all book cover images are uniformly sized */
+    display: block;
+    margin: 0 auto 10px; /* Center align and add bottom margin */
+}
+
+body.bookshelf-page .book .media-container {
+    margin-top: 10px;
+}
+
+body.bookshelf-page .book .media-container video,
+body.bookshelf-page .book .media-container audio {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+body.bookshelf-page .book-details {
+    flex: 1;
+}
+
+.small-video {
+    width: 10%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
 }

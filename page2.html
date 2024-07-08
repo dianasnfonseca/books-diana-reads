@@ -1,199 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive on all devices -->
-    <title>Bookshelf - Books Diana Reads</title> <!-- Title of the webpage -->
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf - Books Diana Reads</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- Container for the entire page content -->
+<body class="bookshelf-page">
     <div class="container">
-        <!-- Header section of the page -->
         <header>
-            <h1>Books Diana Reads</h1> <!-- Main heading of the page -->
+            <h1>Books Diana Reads</h1>
         </header>
         
-        <!-- Navigation menu -->
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li> <!-- Link to the home page -->
-                <li><a href="page2.html">Bookshelf</a></li> <!-- Link to the bookshelf page -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Bookshelf</a></li>
             </ul>
         </nav>
 
-        <!-- Main content area -->
         <main>
-            <section class="bookshelf"> <!-- Bookshelf section -->
-                <h2>My Bookshelf</h2> <!-- Section heading -->
+            <section class="bookshelf">
+                <h2>My Bookshelf</h2>
                 
-                <!-- English Books -->
-                <h3>English Books</h3>
-                <div class="book">
-                    <img src="images/cover-the_amazons.jpg" alt="The Amazons"> <!-- Book cover image -->
-                    <div>
-                        <strong>The Amazons: Lives and Legends of Warrior Women across the Ancient World</strong> by Adrienne Mayor <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/26597397-the-amazons" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
+                <div class="book-section">
+                    <div class="english-books">
+                        <img src="images/uk.png" alt="British Flag" title="English Books">
+                        <h3>English Books</h3>
+                        <div class="book">
+                            <h4>The Amazons: Lives and Legends of Warrior Women across the Ancient World</h4>
+                            <div class="book-content">
+                                <img src="images/cover-the_amazons.jpg" alt="The Amazons">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> History</p>
+                                    <p><strong>Author:</strong> Adrienne Mayor</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/26597397-the-amazons" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>The Sun and Her Flowers</h4>
+                            <div class="book-content">
+                                <img src="images/cover-the_sun_and_the_flowers.jpg" alt="The Sun and Her Flowers">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> Poetry</p>
+                                    <p><strong>Author:</strong> Rupi Kaur</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/35606560-the-sun-and-her-flowers" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>Invisible Women: Data Bias in a World Designed for Men</h4>
+                            <div class="book-content">
+                                <img src="images/cover-invisible_women.jpg" alt="Invisible Women">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> Non-fiction</p>
+                                    <p><strong>Author:</strong> Caroline Criado Pérez</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/41104077-invisible-women" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>Over the Edge of the World: Magellan's Terrifying Circumnavigation of the Globe</h4>
+                            <div class="book-content">
+                                <img src="images/cover-over_the_edge_of_the_world.jpg" alt="Over the Edge of the World">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> History</p>
+                                    <p><strong>Author:</strong> Laurence Bergreen</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/174354.Over_the_Edge_of_the_World" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>The Culture Map: Breaking Through the Invisible Boundaries of Global Business</h4>
+                            <div class="book-content">
+                                <img src="images/cover-the_culture_map.jpg" alt="The Culture Map">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> Business</p>
+                                    <p><strong>Author:</strong> Erin Meyer</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/22085568-the-culture-map" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>The Sayings of the Vikings</h4>
+                            <div class="book-content">
+                                <img src="images/cover-the_sayings_of_the_vikings.jpg" alt="The Sayings of the Vikings">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> History</p>
+                                    <p><strong>Author:</strong> Björn Jónasson</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/347895.The_Sayings_of_the_Vikings" target="_blank">Goodreads</a>
+                                    <br>
+                                    <video controls class="small-video">
+                                        <source src="video/video-20230929.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>To Kill a Mockingbird</h4>
+                            <div class="book-content">
+                                <img src="images/cover-to_kill_a_mockingbird.jpg" alt="To Kill a Mockingbird">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> Fiction</p>
+                                    <p><strong>Author:</strong> Harper Lee</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/816815.To_Kill_a_Mockingbird" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>Fahrenheit 451</h4>
+                            <div class="book-content">
+                                <img src="images/cover-fahrenheit_451.jpg" alt="Fahrenheit 451">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> Dystopian Fiction</p>
+                                    <p><strong>Author:</strong> Ray Bradbury</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/17470674-fahrenheit-451" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>The Fire in the Equations</h4>
+                            <div class="book-content">
+                                <img src="images/cover-the_fire_in_the_equations.jpg" alt="The Fire in the Equations">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> Science</p>
+                                    <p><strong>Author:</strong> Kitty Ferguson</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/2293895.The_Fire_in_the_Equations" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>Bloodlands: Europe Between Hitler and Stalin</h4>
+                            <div class="book-content">
+                                <img src="images/cover-blood_lands.jpg" alt="Bloodlands">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> History</p>
+                                    <p><strong>Author:</strong> Timothy Snyder</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/29754440-bloodlands" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-the_sun_and_the_flowers.jpg" alt="The Sun and Her Flowers"> <!-- Book cover image -->
-                    <div>
-                        <strong>The Sun and Her Flowers</strong> by Rupi Kaur <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/35606560-the-sun-and-her-flowers" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-invisible_women.jpg" alt="Invisible Women"> <!-- Book cover image -->
-                    <div>
-                        <strong>Invisible Women: Data Bias in a World Designed for Men</strong> by Caroline Criado Pérez <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/41104077-invisible-women" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-tinker_tailor_soldier_spy.jpg" alt="Tinker Tailor Soldier Spy"> <!-- Book cover image -->
-                    <div>
-                        <strong>Tinker, Tailor, Soldier, Spy</strong> by John le Carré <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/10073506-tinker-tailor-soldier-spy" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-over_the_edge_of_the_world.jpg" alt="Over the Edge of the World"> <!-- Book cover image -->
-                    <div>
-                        <strong>Over the Edge of the World: Magellan's Terrifying Circumnavigation of the Globe</strong> by Laurence Bergreen <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/174354.Over_the_Edge_of_the_World" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-the_culture_map.jpg" alt="The Culture Map"> <!-- Book cover image -->
-                    <div>
-                        <strong>The Culture Map: Breaking Through the Invisible Boundaries of Global Business</strong> by Erin Meyer <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/22085568-the-culture-map" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-the_sayings_of_the_vikings.jpg" alt="The Sayings of the Vikings"> <!-- Book cover image -->
-                    <div>
-                        <strong>The Sayings of the Vikings</strong> by Björn Jónasson <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/347895.The_Sayings_of_the_Vikings" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                        <br>
-                        <!-- Video related to the book -->
-                        <video controls>
-                            <source src="video/video-20230929.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-to_kill_a_mockingbird.jpg" alt="To Kill a Mockingbird"> <!-- Book cover image -->
-                    <div>
-                        <strong>To Kill a Mockingbird</strong> by Harper Lee <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/816815.To_Kill_a_Mockingbird" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-fahrenheit_451.jpg" alt="Fahrenheit 451"> <!-- Book cover image -->
-                    <div>
-                        <strong>Fahrenheit 451</strong> by Ray Bradbury <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/17470674-fahrenheit-451" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-the_fire_in_the_equations.jpg" alt="The Fire in the Equations"> <!-- Book cover image -->
-                    <div>
-                        <strong>The Fire in the Equations</strong> by Kitty Ferguson <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/2293895.The_Fire_in_the_Equations" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-blood_lands.jpg" alt="Bloodlands"> <!-- Book cover image -->
-                    <div>
-                        <strong>Bloodlands: Europe Between Hitler and Stalin</strong> by Timothy Snyder <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/29754440-bloodlands" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
 
-                <!-- Portuguese Books -->
-                <h3>Portuguese Books</h3>
-                <div class="book">
-                    <img src="images/cover-a_teoria_de_tudo.jpg" alt="A Teoria de Tudo"> <!-- Book cover image -->
-                    <div>
-                        <strong>A Teoria de Tudo: A Origem e o Destino do Universo</strong> by Stephen Hawking, Miguel A.L. Marques (Tradução) <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/9848698-a-teoria-de-tudo" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-mulheres_na_resistencia.jpg" alt="Mulheres na Resistência"> <!-- Book cover image -->
-                    <div>
-                        <strong>Mulheres na Resistência</strong> by Tilar J. Mazzeo <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/158078939-mulheres-na-resist-ncia" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-os_portugueses_e_o_mundo.jpg" alt="Os Portugueses e o Mundo"> <!-- Book cover image -->
-                    <div>
-                        <strong>Os Portugueses e o Mundo</strong> by Raquel Vaz-Pinto <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/25336545-os-portugueses-e-o-mundo" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-os_portugueses_e_o_mundo.jpg" alt="Portugal, um Perfil Histórico"> <!-- Book cover image -->
-                    <div>
-                        <strong>Portugal, um Perfil Histórico</strong> by Pedro Calafate <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/32705176-portugal-um-perfil-hist-rico" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-os_portugueses_e_o_mundo.jpg" alt="Portugal: os números"> <!-- Book cover image -->
-                    <div>
-                        <strong>Portugal: os números</strong> by Maria João Valente Rosa, Paulo Chitas <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/17855439-portugal" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-os_incendios_florestais_em_portugal.jpg" alt="Os Incêndios Florestais Em Portugal"> <!-- Book cover image -->
-                    <div>
-                        <strong>Os Incêndios Florestais Em Portugal</strong> by António Bento-Gonçalves <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/57204378-os-inc-ndios-florestais-em-portugal" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                    </div>
-                </div>
-                <div class="book">
-                    <img src="images/cover-o_guardador_de_rebanhos.jpg" alt="O Guardador de Rebanhos"> <!-- Book cover image -->
-                    <div>
-                        <strong>O Guardador de Rebanhos</strong> by Alberto Caeiro, Fernando Pessoa <!-- Book title and author -->
-                        <br>
-                        <a href="https://www.goodreads.com/book/show/26208525-o-guardador-de-rebanhos" target="_blank">Goodreads</a> <!-- Link to the Goodreads page for the book -->
-                        <br>
-                        <!-- Audio related to the book -->
-                        <audio controls>
-                            <source src="audio/test1.m4a" type="audio/mp4">
-                            Your browser does not support the audio element.
-                        </audio>
+                    <div class="portuguese-books">
+                        <img src="images/pt.png" alt="Portuguese Flag" title="Portuguese Books">
+
+                        <h3>Portuguese Books</h3>
+                        <div class="book">
+                            <h4>A Teoria de Tudo: A Origem e o Destino do Universo</h4>
+                            <div class="book-content">
+                                <img src="images/cover-a_teoria_de_tudo.jpg" alt="A Teoria de Tudo">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> Science</p>
+                                    <p><strong>Author:</strong> Stephen Hawking, Miguel A.L. Marques (Tradução)</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/9848698-a-teoria-de-tudo" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>Os Portugueses e o Mundo</h4>
+                            <div class="book-content">
+                                <img src="images/cover-os_portugueses_e_o_mundo.jpg" alt="Os Portugueses e o Mundo">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> History</p>
+                                    <p><strong>Author:</strong> Raquel Vaz-Pinto</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/25336545-os-portugueses-e-o-mundo" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>Portugal, um Perfil Histórico</h4>
+                            <div class="book-content">
+                                <img src="images/cover-os_portugueses_e_o_mundo.jpg" alt="Portugal, um Perfil Histórico">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> History</p>
+                                    <p><strong>Author:</strong> Pedro Calafate</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/32705176-portugal-um-perfil-hist-rico" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>Portugal: os números</h4>
+                            <div class="book-content">
+                                <img src="images/cover-os_portugueses_e_o_mundo.jpg" alt="Portugal: os números">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> Non-fiction</p>
+                                    <p><strong>Author:</strong> Maria João Valente Rosa, Paulo Chitas</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/17855439-portugal" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>Os Incêndios Florestais Em Portugal</h4>
+                            <div class="book-content">
+                                <img src="images/cover-os_incendios_florestais_em_portugal.jpg" alt="Os Incêndios Florestais Em Portugal">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> Science</p>
+                                    <p><strong>Author:</strong> António Bento-Gonçalves</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/57204378-os-inc-ndios-florestais-em-portugal" target="_blank">Goodreads</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <h4>O Guardador de Rebanhos</h4>
+                            <div class="book-content">
+                                <img src="images/cover-o_guardador_de_rebanhos.jpg" alt="O Guardador de Rebanhos">
+                                <div class="book-details">
+                                    <p><strong>Genre:</strong> Poetry</p>
+                                    <p><strong>Author:</strong> Alberto Caeiro, Fernando Pessoa</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae neque ultrices euismod. Vivamus vel sapien eget sapien dictum scelerisque.</p>
+                                    <a href="https://www.goodreads.com/book/show/26208525-o-guardador-de-rebanhos" target="_blank">Goodreads</a>
+                                    <br>
+                                    <audio controls>
+                                        <source src="audio/test1.m4a" type="audio/mp4">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
 
-        <!-- Footer section -->
         <footer>
-            <p>&copy; 2024 Books Diana Reads</p> <!-- Copyright information -->
+            <p>&copy; 2024 Books Diana Reads</p>
         </footer>
     </div>
 </body>

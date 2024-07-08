@@ -1,35 +1,49 @@
 <!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
 <html lang="en">
+<!-- Opens the HTML document and sets the language to English -->
 <head>
     <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the viewport meta tag for responsive web design -->
     <title>Books Diana Reads</title>
+    <!-- Sets the title of the web page -->
     <link rel="stylesheet" href="style.css">
+    <!-- Links to the external CSS file for styling -->
 </head>
 <body class="home-page">
+    <!-- Opens the body element and applies the "home-page" class for specific styling -->
     <div class="container">
-        <header>
+        <!-- Creates a container div for holding the page content-->
+        <header role="banner">
             <h1>Books Diana Reads</h1>
         </header>
-        
-        <nav>
+        <!-- Defines the header section with the website's name -->
+
+        <nav role="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="page2.html">Bookshelf</a></li>
             </ul>
         </nav>
+        <!-- Creates a navigation menu with links to the home page and bookshelf page -->
 
         <div class="main-content">
+            <!-- Creates a container div for the main content area -->
             <main>
                 <section class="intro">
                     <h2>Welcome</h2>
                     <div class="intro-content">
                         <img src="images/me-in-iceland.jpg" alt="Diana in Iceland">
-                        <p>Hello friends, it's Diana! In this page you can find my current reads and all of the books - some in English, others in Portuguese - I have at my place in Luxembourg. Let me know if you would like to swap some books!</p>
+                        <p>Hello friends, it's Diana! On this page, you'll find my current reads and my entire book collection, including titles in both English and Portuguese, here in Luxembourg. Let me know if you'd like to swap some books!</p>
                     </div>
+                    <!-- Introduces the website with a welcome message and Diana's photo -->
                     <h3>Currently Reading</h3>
                     <div class="current-reading">
+                        <!-- Creates a section for displaying the books Diana is currently reading -->
                         <div class="book">
+                            <!-- Defines a container div for each book -->
                             <strong>Tinker, Tailor, Soldier, Spy</strong><br>by John le Carré
                             <br>
                             <img src="images/cover-tinker_tailor_soldier_spy.jpg" alt="Tinker, Tailor, Soldier, Spy">
@@ -52,12 +66,12 @@
             </main>
 
             <aside class="sidebar">
+                <!-- Creates the sidebar section -->
                 <h2>Books and places</h2>
                 <div class="scene">
                     <img src="images/bertrand-lisbon.jpg" alt="Bertrand library">
                     <p>Did you know that this Bertrand bookstore in Lisbon is considered to be the oldest operating bookstore in the world?</p>
                 </div>
-
                 <div class="scene">
                     <img src="images/reading_corner_lux.jpg" alt="My reading corner at home, in Luxembourg">
                     <p>My cozy reading corner at home in Luxembourg.</p>
@@ -68,6 +82,7 @@
         <footer>
             <p>&copy; 2024 Books Diana Reads</p>
         </footer>
+        <!-- Defines the footer section with a copyright notice -->
     </div>
 </body>
 </html>

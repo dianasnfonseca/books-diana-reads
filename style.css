@@ -171,6 +171,8 @@ body.bookshelf-page .book .media-container audio {
 
 body.bookshelf-page .book-details {
     flex: 1;
+    text-align: left;
+    display: block;
 }
 
 .small-video {

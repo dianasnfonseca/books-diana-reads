@@ -1,0 +1,2 @@
+# This project does not have any external dependencies.
+# It uses only HTML5 and CSS3 for development.

@@ -1,183 +1,205 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Sets the font family for the entire body */
+    margin: 0; /* Resets the default margin */
+    padding: 0; /* Resets the default padding */
+    line-height: 1.6; /* Sets the line height for better readability */
+    background-color: #f4f4f4; /* Sets a light gray background color */
+    color: #333; /* Change the text color to a darker shade */
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    width: 80%; /* Sets the width of the container to 80% */
+    margin: auto; /* Centers the container horizontally */
+    overflow: hidden; /* Prevents content from overflowing the container */
 }
 
 header, footer {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+    background: #333; /* Sets a dark gray background color for the header and footer */
+    color: #fff; /* Sets the text color to white */
+    padding: 1em 0; /* Adds padding to the top and bottom */
+    text-align: center; /* Centers the text horizontally */
 }
 
 header h1, footer p {
-    margin: 0;
+    margin: 0; /* Resets the default margin for the header and footer */
 }
 
 nav ul {
-    padding: 0;
-    list-style: none;
-    background: #333;
-    text-align: center;
+    padding: 0; /* Resets the default padding for the navigation list */
+    list-style: none; /* Removes the default bullet points from the list */
+    background: #333; /* Sets a darker background color for the navigation */
+    text-align: center; /* Centers the navigation items horizontally */
 }
 
 nav ul li {
-    display: inline;
+    display: inline; /* Displays the list items inline */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 20px;
-    display: inline-block;
+    text-decoration: none; /* Removes the default underline from links */
+    color: #fff; /* Sets the link color to white */
+    padding: 5px 20px; /* Adds padding to the links */
+    display: inline-block; /* Allows for proper sizing and spacing */
 }
 
 nav ul li a:hover {
-    background: #575757;
+    background: #575757; /* Sets a lighter gray background color on link hover */
+    color: #fff; /* Ensure hover text color has good contrast */
 }
 
 /* Home Page Specific Styles */
 body.home-page .main-content {
-    display: flex;
-    gap: 20px;
+    display: flex; /* Displays the main content using flexbox */
+    gap: 20px; /* Adds a gap between the main content and sidebar */
 }
 
 body.home-page main {
-    flex: 3;
+    flex: 3; /* Sets the main content to take up 3 parts of the available space */
 }
 
 body.home-page aside.sidebar {
-    flex: 1;
-    background: #fff;
-    padding: 20px;
-    margin-top: 20px;
+    flex: 1; /* Sets the sidebar to take up 1 part of the available space */
+    background: #fff; /* Sets a white background color for the sidebar */
+    padding: 20px; /* Adds padding to the sidebar */
+    margin-top: 20px; /* Adds a top margin to the sidebar */
 }
 
 body.home-page .intro, body.home-page .sidebar {
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
+    background: #fff; /* Sets a white background color for the intro and sidebar */
+    padding: 20px; /* Adds padding to the intro and sidebar */
+    margin: 20px 0; /* Adds top and bottom margin to the intro and sidebar */
 }
 
 body.home-page .intro-content {
-    display: flex;
-    align-items: center;
+    display: flex; /* Displays the intro content using flexbox */
+    align-items: center; /* Vertically aligns the intro content items */
 }
 
 body.home-page .intro-content img {
-    max-width: 150px; /* Keep max-width as per homepage requirement */
-    margin-right: 20px;
+    max-width: 150px; /* Keeps the maximum width of the intro image as 150px */
+    margin-right: 20px; /* Adds a right margin to the intro image */
 }
 
 body.home-page .current-reading {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: flex; /* Displays the current reading section using flexbox */
+    flex-wrap: wrap; /* Wraps the books to the next line if necessary */
+    gap: 20px; /* Adds a gap between the books */
 }
 
 body.home-page .book {
-    width: 45%;
-    text-align: center;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
+    width: 45%; /* Sets the width of each book to 45% */
+    text-align: center; /* Centers the text horizontally */
+    border: 1px solid #ccc; /* Adds a light gray border */
+    padding: 10px; /* Adds padding to the book container */
+    border-radius: 5px; /* Adds a slight border radius */
 }
 
 body.home-page .book img {
-    max-width: 100px; /* Ensure book cover images are consistent */
-    display: block;
-    margin: 10px auto;
+    max-width: 100px; /* Ensures all book cover images have a maximum width of 100px */
+    display: block; /* Displays the book cover images as block elements */
+    margin: 10px auto; /* Centers the book cover images horizontally with top and bottom margins */
 }
 
 body.home-page .sidebar .scene {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adds a bottom margin to each scene in the sidebar */
 }
 
 body.home-page .sidebar img {
-    max-width: 100%;
-    margin-bottom: 10px;
+    max-width: 100%; /* Ensures the sidebar images take up the full width */
+    margin-bottom: 10px; /* Adds a bottom margin to the sidebar images */
 }
 
 @media (max-width: 768px) {
     body.home-page .container {
-        width: 95%;
+        width: 95%; /* Increases the container width to 95% on smaller screens */
     }
 
     body.home-page .main-content {
-        flex-direction: column;
+        flex-direction: column; /* Stacks the main content and sidebar vertically on smaller screens */
     }
 
     body.home-page .book {
-        width: 100%;
+        width: 100%; /* Sets the book width to 100% on smaller screens */
     }
 }
 
 /* Bookshelf Page Specific Styles */
 body.bookshelf-page main {
-    padding: 20px;
-    background: #fff;
-    margin: 20px 0;
+    padding: 20px; /* Adds padding to the main content area */
+    background: #fff; /* Sets a white background color for the main content area */
+    margin: 20px 0; /* Adds top and bottom margin to the main content area */
 }
 
 body.bookshelf-page .bookshelf h2, body.bookshelf-page .bookshelf h3 {
-    color: #333;
+    color: #333; /* Sets a dark gray color for the bookshelf headings */
 }
 
 body.bookshelf-page .book-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: flex; /* Displays the book sections using flexbox */
+    flex-wrap: wrap; /* Wraps the book sections to the next line if necessary */
+    gap: 20px; /* Adds a gap between the book sections */
 }
 
 body.bookshelf-page .english-books, body.bookshelf-page .portuguese-books {
-    flex: 1;
+    flex: 1; /* Sets the English and Portuguese book sections to take up equal space */
 }
 
 body.bookshelf-page .book {
-    flex-basis: calc(33.33% - 20px); /* Adjust width to fit three books per row with gap */
-    text-align: center;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    flex-basis: calc(33.33% - 20px); /* Adjusts the width of each book to fit three books per row with a gap */
+    text-align: center; /* Centers the text horizontally */
+    border: 1px solid #ccc; /* Adds a light gray border */
+    padding: 10px; /* Adds padding to the book container */
+    border-radius: 5px; /* Adds a slight border radius */
+    margin-bottom: 20px; /* Adds a bottom margin to each book */
 }
 
 body.bookshelf-page .book img {
-    max-width: 100px; /* Ensure all book cover images are uniformly sized */
-    display: block;
-    margin: 0 auto 10px; /* Center align and add bottom margin */
+    max-width: 100px; /* Ensures all book cover images have a maximum width of 100px */
+    display: block; /* Displays the book cover images as block elements */
+    margin: 0 auto 10px; /* Centers the book cover images horizontally with a bottom margin */
 }
 
 body.bookshelf-page .book .media-container {
-    margin-top: 10px;
+    margin-top: 10px; /* Adds a top margin to the media container */
 }
 
 body.bookshelf-page .book .media-container video,
 body.bookshelf-page .book .media-container audio {
-    width: 100%;
-    display: block;
-    margin-top: 10px;
+    width: 100%; /* Sets the width of the video and audio elements to 100% */
+    display: block; /* Displays the video and audio elements as block elements */
+    margin-top: 10px; /* Adds a top margin to the video and audio elements */
 }
 
 body.bookshelf-page .book-details {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; Description allignment */
+}
+
+/* Change the display property to flex to enable flexbox layout.
+Set flex-direction to column to stack the child elements vertically.
+Set align-items to center to horizontally center the child elements.
+Set text-align to center to center the text within the child elements. */
+
+/* CSS rule to target the paragraph containing the "Genre", "Author", and "Goodreads" link: */
+body.bookshelf-page .book-details p:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em; /* Adjust the value as needed */
+}
+
+/* Keep the book description text aligned to the left */
+body.bookshelf-page .book-details p:not(:first-child) {
     text-align: left;
-    display: block;
 }
 
 .small-video {
-    width: 10%;
-    height: auto;
+    width: 25%; /* Sets the width of the small video to 10% */
+    height: auto; /* Maintains the aspect ratio of the small video */
     display: block;
     margin-top: 10px;
 }
